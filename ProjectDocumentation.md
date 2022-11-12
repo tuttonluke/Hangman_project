@@ -19,6 +19,7 @@ Technologies:
 ## Milestone 3
 Technologies:
 - Python functions
+- Comments, docstrings, and typing.
 
 The ask_for_input function asks the user for input of a single, alphabetic character until a valid input is given. It then calls the check_guess function which checks if the inputed character is contained within the randomly selected word from the word list.
 
