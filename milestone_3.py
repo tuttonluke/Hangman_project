@@ -7,7 +7,7 @@ word = random.choice(word_list)
 #%%
 def check_guess(guess: str, word: str) -> bool:
     """Checks if letter guessed is contained in the word randomly chosen from
-    the wor list.
+    the word list.
 
     Args:
         guess (str): single alphabetic character 
