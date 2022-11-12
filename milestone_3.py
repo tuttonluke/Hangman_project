@@ -5,7 +5,7 @@ word_list = ['apple', 'grape', 'strawberry', 'mango', 'raspberry']
 word = random.choice(word_list)
 
 #%%
-def check_guess(guess, word):
+def check_guess(guess: str, word: str) -> bool:
     """Checks if letter guessed is contained in the word randomly chosen from
     the wor list.
 
@@ -23,7 +23,7 @@ def check_guess(guess, word):
         print(f"Sorry, {guess} is not in the word. Please try again.")
         return False
 
-def ask_for_input():
+def ask_for_input() -> bool:
     """Asks the user for input of a single, alphabetic character until a 
     valid input is given. It then calls the check_guess function which 
     checks if the inputed character is contained within the randomly selected 
