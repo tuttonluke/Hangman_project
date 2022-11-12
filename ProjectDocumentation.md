@@ -24,7 +24,10 @@ Technologies / Skills:
 The ask_for_input function asks the user for input of a single, alphabetic character until a valid input is given. It then calls the check_guess function which checks if the inputed character is contained within the randomly selected word from the word list.
 
 ## Milestone 4
+Technologies / Skills:
+- Object Oriented Programming
 
+Implements ask_for_input and check_guess as methods in the Hangman class.
 
 
 
