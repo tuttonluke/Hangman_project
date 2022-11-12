@@ -11,7 +11,7 @@ def check_guess(guess: str, word: str) -> bool:
 
     Args:
         guess (str): single alphabetic character 
-        word (str): word chosen randomly from word list
+        word (str): word chosen randomly from word list.
 
     Returns:
         bool: True if guess is correct, false if not.
