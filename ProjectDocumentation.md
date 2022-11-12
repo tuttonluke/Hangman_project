@@ -29,6 +29,9 @@ Technologies / Skills:
 
 Implements ask_for_input and check_guess as methods in the Hangman class.
 
+## Milestone 5
+
+Defines a function called play_game to insantiate and instance of the Hangman class and run the game as expected.
 
 
 
