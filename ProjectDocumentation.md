@@ -1,6 +1,7 @@
 # Project Documentation
 
-(Brief description of the project)
+This introductory project in the AiCore curriculum introduces core concepts such as version control, object oriented programming,
+and programming good practice by the implementation of the classic game of hangman.
 
 ## Milestone 1
 Technologies / Skills:
