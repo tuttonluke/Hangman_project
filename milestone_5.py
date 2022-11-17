@@ -18,20 +18,17 @@ class Hangman:
     def __init__(self, word_list: list, num_lives=5) -> None:
         self.word_list = word_list
         self.num_lives = num_lives
-        self.word = list(random.choice(word_list)) # word to be guessed as a list
+        self.word = list(random.choice(word_list)) 
         self.word_guessed = ['_']*len(self.word)
         self.num_letters = len(set(self.word).difference(self.word_guessed))
-        self.list_of_guesses = [] # list of guesses already tried
+        self.list_of_guesses = []
     
     def check_guess(self, guess: str) -> bool:
         """Checks if letter guessed is contained in the word randomly chosen from
         the word list.
 
         Args:
-            guess (str): single alphabetic character.
-
-        Returns:
-            bool: True if guess is correct, false if not.
+            guess (str): method parameter, single alphabetic character.
         """        
         guess = guess.lower()
         if guess in self.word: # if guess is correct
@@ -41,12 +38,10 @@ class Hangman:
                 if self.word[i] == guess:
                     self.word_guessed[i] = guess
             self.num_letters -= 1
-            return True
         else:
             print(f"Sorry, {guess} is not in the word.")
             self.num_lives -= 1
             print(f'You have {self.num_lives} lives remaining.')
-            return False
     
     def ask_for_input(self) -> bool:
         """Asks the user for input of a single, alphabetic character until a 
@@ -55,7 +50,8 @@ class Hangman:
         word from the word list.
 
         Returns:
-            bool: True if guess is correct, False otherwise.
+            check_guess: class instance method that checks whether the letter
+             has been guessed correctly or not
         """
         while True:
             letter_guess = input('Enter a single letter guess: ')
@@ -65,7 +61,7 @@ class Hangman:
                 break
             # check if the guess has already been made
             elif letter_guess in self.list_of_guesses:
-                print('You already tried that letter!')
+                print(f'You already tried the letter {letter_guess}!')
                 break
             else:
                 self.list_of_guesses.append(letter_guess)
