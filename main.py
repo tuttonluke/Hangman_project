@@ -21,6 +21,3 @@ def play_game(word_list: list) -> str:
             break
 #%%
 play_game(word_list)
-
-
-    
